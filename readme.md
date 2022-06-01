@@ -19,4 +19,6 @@ JS:
 
 ![alt text](https://github.com/juliajune/timetable.git/raw/master/app/demo.jpg)
 
+![alt text](https://github.com/juliajune/timetable/blob/master/demo.jpg?raw=true)
+
 
