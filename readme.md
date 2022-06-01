@@ -17,4 +17,4 @@ JS:
 - mobile swiper slider - swiper slider JS plugin
 
 
-![alt text](http://juliajune.github.io/timetable/demo.jpg)
+![alt text](http://juliajune.github.io/timetable/app/demo.jpg)
