@@ -1,0 +1,65 @@
+@use 'sass:math';
+@use 'sass:color';
+
+// import Swiper styles
+@import 'node_modules/swiper/swiper';
+
+@import 'reset';
+@import 'vars';
+
+
+@import 'blocks/accordion';
+@import 'blocks/tab';
+@import 'blocks/sliders';
+@import 'blocks/timelist';
+
+
+body{
+    font-size: var(--text-font-size);
+    color: var(--text-dark);
+    line-height: var(--text-line-height);
+    font-weight: 400;
+    font-family: var(--text-font);
+    background-color: #e9f1f0;;
+}
+
+.content-desktop{
+  display: block;
+  @media screen and (max-width : 576px) {
+    display: none;
+  }
+}
+.content-mobile{
+  display: none;
+  @media screen and (max-width : 576px) {
+    display: block;
+  }
+}
+
+.page{
+  padding: 70px 50px;
+  @media screen and (max-width : 992px) {
+    padding: 10px;
+  }
+  &__title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    @media screen and (max-width : 576px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  
+  &__content{
+    width: 90%;
+    max-width: 1000px;
+    margin:  0 auto;
+  }
+}
+
+
+  

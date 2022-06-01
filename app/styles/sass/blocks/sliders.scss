@@ -1,0 +1,78 @@
+.day-slider{
+    overflow: hidden;
+    position: relative;
+    &__description{
+        padding: 20px 0;
+        text-align: center;
+    } 
+    &__name{
+        display: inline-block;
+        background-color: var(--main);
+        font-size: 18px;
+        line-height: 24px;
+        padding: 7px 34px;
+        border: 1px solid var(--color-active-tab);
+        text-align: center;
+        border-radius: 8px;
+        font-weight: 700;
+    } 
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        top: 8%;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 0.35;
+        cursor: auto;
+        pointer-events: none;
+    }
+    .swiper-button-prev.swiper-button-hidden,
+    .swiper-button-next.swiper-button-hidden {
+        opacity: 0;
+        cursor: auto;
+        pointer-events: none;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 20px;
+        right: auto;
+    }
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 20px;
+        left: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: 'next';
+    }
+    .swiper-button-lock {
+        display: none;
+    }   
+}
+
+
+

@@ -1,0 +1,103 @@
+/*-- ACCORDION --*/
+.accordion { 
+
+    &__item {
+        background-color: var(--color-section-bg);
+        border-radius: 42px;
+        margin-bottom: 10px; 
+        
+       
+    }
+    &__item-header {
+        background-color: var(--color-section-bg);
+        background-image: url(../images/dist/img.png);
+        background-size: 56px 56px;
+        background-repeat: no-repeat;
+        background-position: 35px center;
+        font-family: var(--title-font);
+        color: var(--main);
+        font-size: var(--section-title-font-size);
+        line-height: var(--section-title-font-height);
+        font-weight: var(--section-title-font-weight);
+        padding: 20px 100px;
+        border-radius: 42px;
+        position: relative;
+        transition: var(--transition);
+        @media screen and (max-width : 576px) {
+            font-size: 16px;
+            line-height: 22px;
+            border-radius: 30px;
+            background-position: 25px center;            
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: var(--color-section-bg-hover);
+            transition: var(--transition);
+        }
+        &:before{
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 40px;
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-section-arrow-bg);
+            border-radius: 50%;
+            @media screen and (max-width : 576px) {
+                content: none;               
+            }
+        }
+        &:after{
+            content: url(../images/dist/arrow-right.png);
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 58px;
+            @media screen and (max-width : 576px) {
+                right: 25px;
+            }       
+        }
+        &.active{
+            &:after{
+                content: url(../images/dist/arrow-bottom.png); 
+                right: 56px;              
+            }
+            &:hover{
+                background-color: var(--color-section-bg);
+                cursor: default;
+            }
+        }
+    }
+    &__item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border-bottom-left-radius: 42px;
+        border-bottom-right-radius: 42px;
+        background-color: var(--color-section-bg);  
+       
+      }
+    &__item-body-content {
+        margin: 32px;
+        background-color: var(--main);
+        border-radius: 24px;
+        border: 2px solid var(--color-section-bg);   
+        overflow: hidden;   
+        @media screen and (max-width : 576px) {
+            margin: 0;
+            border-radius: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-left: 1px solid var(--color-section-bg); 
+            border-right: 1px solid var(--color-section-bg); 
+            border-bottom: 1px solid var(--color-section-bg);
+            
+        }
+    }
+} 
+/*-- /ACCORDION --*/
