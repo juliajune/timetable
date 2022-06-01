@@ -21,6 +21,6 @@ JS:
 
 ![alt text](https://github.com/juliajune/timetable/blob/master/demo.jpg?raw=true)
 
-<img src="https://github.com/juliajune/timetable.git/raw/master/app/demo.jpg" alt="Project Preview">
+<img src="https://github.com/juliajune/timetable.git/raw/master/demo.jpg" alt="Project Preview">
 
 
