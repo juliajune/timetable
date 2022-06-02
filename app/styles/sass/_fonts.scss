@@ -1,0 +1,25 @@
+// FONTS LOAD SECTION
+$title-font: montseratt, sans-serif;
+$text-font: open-sans, sans-serif;
+
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+        font-display: swap;
+    }
+}
+
+
+@include font-face("open-sans", "../fonts/OpenSans/OpenSans-Regular", 400);
+@include font-face("open-sans", "../fonts/OpenSans/OpenSans-Medium", 500);
+
+
+@include font-face("montseratt", "../fonts/Montseratt/Montserrat-Light", 300);
+@include font-face("montseratt", "../fonts/Montseratt/Montserrat-Regular", 400);
+@include font-face("montseratt", "../fonts/Montseratt/Montserrat-Bold", 700);
+@include font-face("montseratt", "../fonts/Montseratt/Montserrat-SemiBold", 900);

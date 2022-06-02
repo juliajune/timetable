@@ -25,7 +25,7 @@
 		line-height: var(--tab-title-font-height);
 		font-weight: var(--tab-title-font-weight);
 		color: var(--text);
-		font-family: var(--title-font);
+		font-family: $title-font;
 		background-color: var(--main);	
 		text-align: center;
 		transition: var(--transition);

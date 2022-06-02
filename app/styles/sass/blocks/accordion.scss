@@ -14,7 +14,7 @@
         background-size: 56px 56px;
         background-repeat: no-repeat;
         background-position: 35px center;
-        font-family: var(--title-font);
+        font-family: $title-font;
         color: var(--main);
         font-size: var(--section-title-font-size);
         line-height: var(--section-title-font-height);
@@ -25,9 +25,15 @@
         transition: var(--transition);
         @media screen and (max-width : 576px) {
             font-size: 16px;
-            line-height: 22px;
+            line-height: 20px;
             border-radius: 30px;
-            background-position: 25px center;            
+            background-position: 25px center;   
+            padding: 18px 45px 18px 80px;        
+        }
+        @media screen and (max-width : 400px) {
+            background-position: 15px center;
+             
+
         }
         &:hover{
             cursor: pointer;
@@ -58,13 +64,18 @@
             right: 58px;
             @media screen and (max-width : 576px) {
                 right: 25px;
-            }       
+            }
+                      
         }
         &.active{
             &:after{
                 content: url(../images/dist/arrow-bottom.png); 
-                right: 56px;              
+                right: 56px;  
+                @media screen and (max-width : 576px) {
+                    right: 25px;
+                }            
             }
+            
             &:hover{
                 background-color: var(--color-section-bg);
                 cursor: default;
