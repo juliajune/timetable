@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			else {
 				accordionItemBody.style.maxHeight = 0;
 			}    
-		});
+		}, {passive: true});
 	});	
 	/*-- /ACCORDION --*/
 	/*-- TABS --*/
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			});
 			}, false);
-		});
+		}, {passive: true});
 	});
 	/*-- /TABS --*/
 	/*-- SLIDERS --*/
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			
 	});   
 
-})//End
+}, {passive: true})//End
 
 // Tabs
 
