@@ -24,4 +24,6 @@ JS:
 
 <img src="https://github.com/juliajune/timetable.git/raw/master/demo.jpg" alt="Project Preview">
 
+<img src="https://raw.githubusercontent.com/juliajune/timetable/master/demo.jpg" alt="Project Preview">
+
 
