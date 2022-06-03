@@ -1,3 +1,4 @@
+/*
 :root {
 	
 	--main: #fff;
@@ -8,10 +9,7 @@
 	--color-section-bg-hover: #6b807c;
 	--color-section-arrow-bg: #6C6057;
 	--color-active-tab: #F6E2A8;
-	--border-color: #EDE6DC;
-
-	//--title-font: $title-font;
-	//--text-font: $text-font;
+	---border-color: #EDE6DC;
 
 	--text-font-size: 20px;
 	--text-line-height: 28px;
@@ -26,3 +24,27 @@
 
 	--transition: 0.3s;
 }
+*/
+
+    $color-main: #fff; //
+	$color-text-light: #6C6057;//	
+	$color-text: #443D37; //
+	$color-text-dark: #251F1B;//
+	$color-section-bg: #9ABAB4;//
+	$color-section-bg-hover: #6b807c;//
+	$color-section-arrow-bg: #6C6057;//
+	$color-active-tab: #F6E2A8;//
+	$color-border: #EDE6DC;//
+
+	$text-font-size: 20px;//
+	$text-line-height: 28px;//
+	
+	$section-title-font-size: 24px;//
+	$section-title-font-height: 31px;//
+	$section-title-font-weight: 900;//
+
+	$tab-title-font-size: 22px;//
+	$tab-title-font-height: 29px;//
+	$tab-title-font-weight: 700;//
+
+	$transition: 0.3s;

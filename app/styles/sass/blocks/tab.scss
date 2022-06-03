@@ -15,20 +15,20 @@
 		flex-grow: 1;
 	} 
 	&__nav-item.active .tab__nav-link {
-		background-color: var(--color-active-tab);
+		background-color: $color-active-tab;
 	} 
 	&__nav-link {
 		display: block;
 		cursor: pointer;
 		padding: 24px 32px;
-		font-size: var(--tab-title-font-size);
-		line-height: var(--tab-title-font-height);
-		font-weight: var(--tab-title-font-weight);
-		color: var(--text);
+		font-size: $tab-title-font-size;
+		line-height: $tab-title-font-height;
+		font-weight: $tab-title-font-weight;
+		color: $color-text;
 		font-family: $title-font;
-		background-color: var(--main);	
+		background-color: $color-main;	
 		text-align: center;
-		transition: var(--transition);
+		transition: $transition;
 		@media screen and (max-width : 576px) {
 			font-size: 18px;
 			line-height: 24px;
@@ -36,7 +36,7 @@
 		}
 	}
 	&__body {
-		background-color: var(--main); 
+		background-color: $color-main; 
 		flex-grow: 1;   
 	}
 	&__pane {

@@ -1,8 +1,8 @@
 /*-- TIMELIST --*/
 .timelist{	
-	font-size: var(--text-font-size);
-    color: var(--text-dark);
-    line-height: var(--text-line-height);
+	font-size: $text-font-size;
+    color: $color-text-dark;
+    line-height: $text-line-height;
     font-weight: 400;
     font-family: $text-font;
 	@media screen and (max-width : 576px) {
@@ -14,15 +14,15 @@
 		flex-direction: row;
 		padding: 0px;
 		&:not(:last-child){
-			border-bottom: 2px solid var(--color-section-bg);
+			border-bottom: 2px solid $color-section-bg;
 			@media screen and (max-width : 576px) {
-				border-color: var(--border-color);
+				border-color: $color-border;
 			}
 		}		
 		&:first-child{
-			border-top: 2px solid var(--color-section-bg);
+			border-top: 2px solid $color-section-bg;
 			@media screen and (max-width : 576px) {
-				border-color: var(--border-color);
+				border-color: $color-border;
 				
 			}
 		}
@@ -36,7 +36,7 @@
 		flex-grow: 0;
 		width: 180px;
 		font-weight: 500;
-		color: var(--text-light);
+		color: $color-text-light;
 		@media screen and (max-width : 576px) {
 			padding: 0;
 		}
